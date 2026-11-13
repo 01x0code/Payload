@@ -24,7 +24,7 @@ local mapPayloads = {
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Coldwarscript/refs/heads/main/Coldwar"))()
     end,
     
-    [nil] = function()
+    nil = function()
         debugPrint("กำลังรัน Payload สำหรับ Map B (ID: 87654321)")
         -- ใส่โค้ด Payload ของ Map B ตรงนี้
     end,
