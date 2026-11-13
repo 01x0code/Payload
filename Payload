@@ -1,1 +1,49 @@
-print(100)
+-- ==========================================
+-- CONFIGURATION & SETTINGS
+-- ==========================================
+local CONFIG = {
+    debugMode = true, -- ตั้งค่าเป็น true เพื่อแสดง Log หรือ false เพื่อปิด Log ทั้งหมด
+}
+
+-- ฟังก์ชันช่วยจัดการ Log ตามสถานะ Debug Mode
+local function debugPrint(...)
+    if CONFIG.debugMode then
+        print("[PayloadSystem]", ...)
+    end
+end
+
+-- ==========================================
+-- PAYLOAD CONFIGURATIONS BY MAP ID
+-- ==========================================
+local currentPlaceId = game.PlaceId
+
+-- กำหนดตารางจับคู่ Map ID กับฟังก์ชัน Payload
+local mapPayloads = {
+    [13687899540] = function()
+        debugPrint("กำลังรัน Payload สำหรับ Map A (ID: 12345678)")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Coldwarscript/refs/heads/main/Coldwar"))()
+    end,
+    
+    [nil] = function()
+        debugPrint("กำลังรัน Payload สำหรับ Map B (ID: 87654321)")
+        -- ใส่โค้ด Payload ของ Map B ตรงนี้
+    end,
+}
+
+-- ==========================================
+-- CORE FUNCTION
+-- ==========================================
+local function executePayload()
+    local payloadFunction = mapPayloads[currentPlaceId]
+    
+    if payloadFunction then
+        debugPrint("พบ Map ID ที่ตรงกัน:", currentPlaceId, "กำลังรัน Payload...")
+        payloadFunction()
+    else
+        -- ถ้าไม่ตรงกับแมพไหนเลย ให้รันผ่านไปเงียบๆ (หรือโชว์ Log เฉพาะตอนเปิด debugMode)
+        debugPrint("ไม่พบ Map ID (" .. currentPlaceId .. ") ในระบบ ข้ามการทำงานไป...")
+    end
+end
+
+-- เริ่มต้นรันระบบ
+executePayload()
