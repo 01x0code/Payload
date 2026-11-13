@@ -2,7 +2,7 @@
 -- CONFIGURATION & SETTINGS
 -- ==========================================
 local CONFIG = {
-    debugMode = true, -- ตั้งค่าเป็น true เพื่อแสดง Log หรือ false เพื่อปิด Log ทั้งหมด
+    debugMode = false, -- ตั้งค่าเป็น true เพื่อแสดง Log หรือ false เพื่อปิด Log ทั้งหมด
 }
 
 -- ฟังก์ชันช่วยจัดการ Log ตามสถานะ Debug Mode
