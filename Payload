@@ -20,13 +20,13 @@ local currentPlaceId = game.PlaceId
 -- กำหนดตารางจับคู่ Map ID กับฟังก์ชัน Payload
 local mapPayloads = {
     [13687899540] = function()
-        debugPrint("กำลังรัน Payload สำหรับ Map A (ID: 12345678)")
+        debugPrint("กำลังรัน Payload สำหรับ Map A (ID: 13687899540)")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Coldwarscript/refs/heads/main/Coldwar"))()
     end,
-    
-    nil = function()
-        debugPrint("กำลังรัน Payload สำหรับ Map B (ID: 87654321)")
-        -- ใส่โค้ด Payload ของ Map B ตรงนี้
+
+    [987654321] = function() -- เปลี่ยนเป็น PlaceId จริงของ Map B
+        debugPrint("กำลังรัน Payload สำหรับ Map B")
+        -- ใส่โค้ด Payload สำหรับ Map B ตรงนี้
     end,
 }
 
