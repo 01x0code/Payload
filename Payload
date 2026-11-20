@@ -22,6 +22,7 @@ local mapPayloads = {
     [13687899540] = function()
         debugPrint("กำลังรัน Payload สำหรับ Coldwar")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Coldwarscript/refs/heads/main/Coldwar"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Header/refs/heads/main/My%20Header%20for%20owner%20script"))()
     end,
 
     [14419907512] = function() -- เปลี่ยนเป็น PlaceId จริงของ Map B
