@@ -77,7 +77,7 @@ txt.Size = UDim2.fromScale(1, 0.5)
 txt.BackgroundTransparency = 1
 txt.Font = Enum.Font.GothamBlack
 txt.TextScaled = true
-txt.Text = "Fuck you!"
+txt.Text = "Why did you unfollow me:(, And you tryna anikick"
 txt.TextColor3 = Color3.fromRGB(255, 30, 30)
 txt.Parent = bg
 
