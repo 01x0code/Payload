@@ -1,4 +1,4 @@
-task.wait(7)
+task.wait(20)
 
 if not game:IsLoaded() then
     game.Loaded:Wait()
