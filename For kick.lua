@@ -1,3 +1,5 @@
+task.wait(7)
+
 if not game:IsLoaded() then
     game.Loaded:Wait()
 end
