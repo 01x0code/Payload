@@ -24,11 +24,20 @@ local mapPayloads = {
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Coldwarscript/refs/heads/main/Coldwar"))()
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Header/refs/heads/main/My%20Header%20for%20owner%20script"))()
     end,
-
+-- =========================================
     [14419907512] = function() -- เปลี่ยนเป็น PlaceId จริงของ Map B
         debugPrint("กำลังรัน Payload สำหรับ Zombie game [upd3]")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Zombie-game/refs/heads/main/Eng%20version%20%E0%B8%94%E0%B8%B1%E0%B8%94%E0%B9%81%E0%B8%9B%E0%B8%A5%E0%B8%87%20script%20%E0%B8%97%E0%B8%B5%E0%B9%88%E0%B8%99%E0%B8%B5%E0%B9%88"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Header/refs/heads/main/My%20Header%20for%20owner%20script"))()
     end,
+-- =========================================
+local mapPayloads = {
+    [155615604] = function()
+        debugPrint("กำลังรัน Payload สำหรับ Prison life")
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Payload/refs/heads/main/prison%20life"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Header/refs/heads/main/My%20Header%20for%20owner%20script"))()
+    end,
+
 }
 
 -- ==========================================
