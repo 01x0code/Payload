@@ -31,7 +31,6 @@ local mapPayloads = {
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Header/refs/heads/main/My%20Header%20for%20owner%20script"))()
     end,
 -- =========================================
-local mapPayloads = {
     [155615604] = function()
         debugPrint("กำลังรัน Payload สำหรับ Prison life")
         loadstring(game:HttpGet("https://raw.githubusercontent.com/01x0code/Payload/refs/heads/main/prison%20life"))()
